@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>online education</title>
+     <!-- =========font awesome start start========= -->
+     <script src="https://kit.fontawesome.com/da2fab33a0.js" crossorigin="anonymous"></script>
+     <!-- =========font awesome start end=========== -->
     <!-- bootstrap cdn link start  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- bootstrap cdn end -->
@@ -38,7 +41,7 @@
     </header>
     <main>
       <!-- Discover Our Popular Courses start  -->
-      <div class="d-block text-center mt-5">
+      <div class="d-block text-center margin-top">
         <h1 class="fw-bold">Discover Our Popular <br> Courses</h1>
         <p>It is a long established fact that a reader will be distracted by the readable <br> content of a page when looking at its layout.</p>
       </div>
@@ -130,21 +133,56 @@
       </section>
 <!-- courses section end  -->
 <!-- join ready section start  -->
-<section class="container bg-primary mt-5">
+<section class="container bg-primary margin-top">
   <div class="d-flex p-5 align-items-center justify-content-between">
     <div>
       <h1 class="text-white fw-bold">Ready to join?</h1>
       <p class="text-white">It is a long established fact that a reader will be distracted by the <br> readable content of a page when looking at its layout.</p>
     </div>
-    <div>
-      <button class="btn bg-white fw-bold px-5 text-primary py-3 me-5">Register Now</button>
+      <div>
+        <!-- Button trigger modal -->
+    <button type="button" class="btn bg-white fw-bold px-5 text-primary py-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Register Now
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
     </div>
-  
+    </div>
   </div>
 </section>
 <!-- join ready section end -->
 <!-- trusted section start  -->
-<section class="container my-5 d-blok align-items-center justify-content-center">
+<section class="container margin-top d-blok align-items-center justify-content-center">
   <div>
     <h1 class="fw-bold text-center">Trusted by over 800+ companies</h1>
   </div>
@@ -160,7 +198,106 @@
   </div>
 </section>
 <!-- trusted section end  -->
-    </main>
+<!-- questions section start  -->
+<section class="container margin-top">
+  <div>
+    <div>
+      <h1 class="text-center fw-bold">Frequently Asked Questions</h1>
+      <p class="text-center">It is a long established fact that a reader will be distracted by the readable <br> content of a page when looking at its layout.
+      </p>
+    </div>
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-6 col-sm-12">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item mb-3 border">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  What’s the difference between Flex-Box and Grid? 
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  1. Dimensionality and Flexibility:
+                  Flexbox offers greater control over alignment and space distribution between items. Being one-dimensional, Flexbox only deals with either columns or rows.
+                  Grid has two-dimension layout capabilities which allow flexible widths as a unit of length. This compensates for the limitations in Flex. <br>
+                  2. Alignment:
+                  Flex Direction allows developers to align elements vertically or horizontally, which is used when developers create and reverse rows or columns.
+                  CSS Grid deploys fractional measure units for grid fluidity and auto-keyword functionality to automatically adjust columns or rows. <br>
+                  3. Item Management
+                  Flex Container is the parent element while Flex Item represents the children. The Flex Container can ensure balanced representation by adjusting item dimensions. This allows developers to design for fluctuating screen sizes.
+                  Grid supports both implicit and explicit content placement. Its inbuilt automation allows it to automatically extend line items and copy values into the new creation from the preceding item.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mb-3 border">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  What’s the difference between Bootstrap and Tailwind?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Bootstrap is the most popular HTML, CSS, and JavaScript framework for building responsive, mobile-first projects on the web. Tailwind CSS, on the other hand, is the most popular utility-first CSS framework for fast UI development.
+                  The main difference between TailwindCSS and Bootstrap is that Tailwind CSS is not a UI kit. Unlike UI kits such as Bootstrap, Bulma, and Foundation, Tailwind CSS doesn’t have a default theme or built-in UI components. Instead, it comes with predesigned widgets you can use to build your site from scratch.
+                  Bootstrap is known for its responsiveness, whereas proponents of Tailwind CSS typically value the framework’s customizability. The best choice for you depends on your priorities and project requirements, but let’s talk about why Tailwind CSS is quickly gaining popularity and more widespread use.
+              </div>
+            </div>
+            <div class="accordion-item mb-3 border">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  What is CSS Box Model?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  n CSS, the term "box model" is used when talking about design and layout.
+                  The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item mb-5 border">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  What is semantic tag?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  The HTML semantics refers to the tags that provide meaning to an HTML page rather than just presentation. It makes HTML more comprehensible by better defining the different sections and layout of web pages. 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- questions section end -->
+</main>
+<footer class="bg-black py-5 margin-top">
+  <div>
+    <h2 class="text-white text-center">Online Education</h2>
+    <p class="text-white text-center">Office 41, Zawaya Buildin, Ghala Muscat, 
+      Sultanate of Oman
+    </p>
+    <p class="text-white text-center">Privacy Ploicy  |   Terms of use</p>
+  </div>
+  <div class="d-flex justify-content-center">
+    <div class="d-flex gap-3">
+      <a href="https://www.facebook.com/profile.php?id=100010419976460">
+          <i class="fa-brands fa-facebook-square text-white"></i>
+      </a>
+      <a target="_blank" href="https://twitter.com/JunnunProdhan">
+          <i class="fa-brands fa-twitter-square text-white"></i>
+      </a>
+      <a target="_blank" href="https://www.linkedin.com/in/junnun-prodhan-434a12201/">
+          <i class="fa-brands fa-linkedin text-white"></i>
+      </a>
+  </div>
+  </div>
+</footer>
     <!-- bootstrap script cnd link start  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
      <!-- bootstrap script cnd link end  -->
