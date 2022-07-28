@@ -8,3 +8,26 @@
   .background{
     background-color: #F4FAFD;
   }
+  @media only screen and (max-width:676px) {
+    .courses-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .explore-section{
+      border: 1px solid red;
+        padding: 0%;
+        display: flex;
+        flex-direction: column;  
+    }
+    .image-width{
+        width: 100%;
+    }
+ 
+    .image-margin{
+        margin: 0 40px;
+    }
+    .join-ready{
+      display: flex;
+      flex-direction: column;
+    }
+  }
